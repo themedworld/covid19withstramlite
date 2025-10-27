@@ -61,7 +61,7 @@ st.markdown("""
 st.markdown('<h1 class="main-header">🦠 COVID-19 Analysis & Prediction Dashboard</h1>', unsafe_allow_html=True)
 
 # --- 1. Charger le dataset ---
-st.sidebar.header("📁 Data Configuration")
+st.sidebar.header(" Data Configuration")
 uploaded_file = st.sidebar.file_uploader("Upload CSV file", type=["csv"])
 
 if uploaded_file is not None:
@@ -126,7 +126,7 @@ with col4:
 
 # --- 2. Analyse descriptive ---
 st.markdown("---")
-st.header("📊 Descriptive Analysis")
+st.header("Descriptive Analysis")
 
 # Sélecteur de layout
 tab1, tab2, tab3, tab4 = st.tabs(["Dataset Overview", "Feature Analysis", "COVID-19 Distribution", "Textual Analysis"])
@@ -242,7 +242,7 @@ with tab4:
 
 # --- 3. Modèle de prédiction ---
 st.markdown("---")
-st.header("🤖 Machine Learning Model")
+st.header(" Machine Learning Model")
 
 model_tab1, model_tab2 = st.tabs(["Model Training", "Feature Importance"])
 
@@ -345,7 +345,7 @@ with model_tab2:
 
 # --- 4. Prédiction d'un nouveau patient ---
 st.markdown("---")
-st.header("🎯 COVID-19 Prediction for New Patient")
+st.header(" COVID-19 Prediction for New Patient")
 
 pred_tab1, pred_tab2 = st.tabs(["Manual Input", "Batch Prediction"])
 
